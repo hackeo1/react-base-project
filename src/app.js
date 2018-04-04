@@ -1,11 +1,14 @@
 import './styles.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Greeting from './components/greeting'
+import Greeting from './components/greeting.component'
 
-var root = document.getElementById('react-root')
+let root = document.getElementById('react-root');
 
 ReactDOM.render(
-  <Greeting name='World' />,
+  <div>
+    <Greeting name='Earth' />
+    <Greeting name='Mars' />
+  </div>,
   root
-)
+);
